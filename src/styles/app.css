@@ -14,8 +14,6 @@ a:active{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
 
@@ -23,15 +21,8 @@ a:active{
   text-align: center;
 }
 
-
 section {
   margin: 1rem;
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
-/* @media only screen and (max-width: 600px) {
-  section {
-    width:300px;
-  }
-} */

@@ -3,7 +3,7 @@ import {useState} from 'react'
 export default function PhotoCard({ src,imgUrl, alt, title }) {
 
   const [isView,setIsView] = useState(false)
-
+// single photo card component
     return (
         <>
         {/* Default card */}

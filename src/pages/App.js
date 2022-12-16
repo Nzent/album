@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, redirect } from 'react-router-dom';
 import Home from './Home';
 import Photo from './Photo';
 import "../styles/app.css"
@@ -7,10 +7,12 @@ function App() {
 
   return (
     <>
+      {/* navbar compoent */}
       <NavBar />
       <Routes>
+        {/* home route compoent */}
         <Route path='/' element={<Home />} />
-        <Route path='/photo/:id' element={<Photo />} />
+        <Route path='/:id' element={<Photo />} />
       </Routes>
     </>
   );

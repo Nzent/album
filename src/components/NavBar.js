@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import "../styles/Navbar.css"
 
 export default function NavBar() {
+  // navbar component
   return (
     <nav>
         <h4 className="nav-items">My Album</h4>
