@@ -1,6 +1,32 @@
-.ac-body{
-    background-color: white;
-    padding: 1rem;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    border-radius: 0.3rem;
+.ac-body {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  padding: 1rem;
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+  border-radius: 0.3rem;
+}
+.ac-body:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.ac-title {
+  padding-left: 0.5rem;
+}
+
+.ac-thumbnail {
+  height: 5rem;
+  width: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ac-title {
+    padding-left: 0.5rem;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

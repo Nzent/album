@@ -7,7 +7,7 @@ export function usePhotos(id) {
     useEffect(() => {
         async function fetchData(){
             try{
-                await fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
+                await fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${id}`)
                 .then((response) => response.json())
                 .then((data) => setPhotosData(data));
             }catch (E){

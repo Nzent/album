@@ -9,9 +9,8 @@ const albums= useAlbums()
    
   return (
     <div className="app">
-    <h1 className='h-title'>Album</h1>
-    <section className='cardSection'>
-
+    <h1 className='h-title'>Albums</h1>
+    <section className='h-cardgrid'>
       {
       albums == null? <h3>Loading ...</h3> :
       albums.map((album) =>

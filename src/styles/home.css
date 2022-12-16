@@ -1,0 +1,21 @@
+.h-cardgrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30rem);
+}
+
+@media only screen and (max-width: 1500px) {
+  .h-cardgrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 30rem);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .h-cardgrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 30rem);
+  }
+}

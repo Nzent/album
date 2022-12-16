@@ -1,8 +1,11 @@
+import "../styles/photoCard.css"
 export default function PhotoCard({ src, alt, title }) {
     return (
         <>
-          {<img src={src} alt={alt} />}
-            <h1>{title}</h1>
+          <div className="pc-body">
+            <img src={src} alt={alt} />
+            <h4>{title}</h4>
+          </div>
         </>
     )
 }

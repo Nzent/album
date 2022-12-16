@@ -1,0 +1,4 @@
+.pc-body{
+    display: flex;
+    flex-direction: column;
+}

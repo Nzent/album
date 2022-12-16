@@ -1,15 +1,14 @@
 import React from 'react'
 import '../styles/albumCard.css'
 import { Link } from 'react-router-dom'
-export default function AlbumCard({ title, id, src }) {
 
+export default function AlbumCard({ id, }) {
 
   return (
     <Link to={`/photo/${id}`}>
-      <div>
-        <img src={src = undefined ? null : src} alt={title} />
+      <div className='ac-body'>
+        <div className='ac-title'>Album {id}</div>
       </div>
-      <div className='ac-body'>{title}</div>
     </Link>
   )
 }

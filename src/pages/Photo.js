@@ -7,12 +7,17 @@ export default function Photo() {
   const { id } = useParams()
 
   const photos = usePhotos(id)
-
-  console.log(photos);
   return (
     <>
-      <section className='p-section'>
-        {photos == null?<h3>Loading ... </h3>:<PhotoCard src={photos?.url} title={photos?.title}/>}
+      <section>
+          <h1>{photos?.length} items</h1>
+        <div className="p-grid">
+          {photos?.map((photo) => 
+          <>
+             {photo == null?<h3>Loading ... </h3>:<PhotoCard src={photo?.url} key={photo?.id} title={photo?.title}/>}
+          </>
+          )}
+        </div>
       </section>
     </>
   )
