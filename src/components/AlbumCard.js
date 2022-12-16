@@ -1,7 +1,9 @@
 import React from 'react'
 import './AlbumCard.css'
-export default function AlbumCard({title}) {
+export default function AlbumCard({title,id}) {
   return (
-    <div className='ac-body'>{title}</div>
+    <a href={`/photo/${id}`}>
+      <div className='ac-body'>{title}</div>
+    </a>
   )
 }
