@@ -10,11 +10,11 @@ export default function Photo() {
   return (
     <>
       <section>
-          <h1>{photos?.length} items</h1>
+          <h1>{photos?.length} photos found</h1>
         <div className="p-grid">
           {photos?.map((photo) => 
           <>
-             {photo == null?<h3>Loading ... </h3>:<PhotoCard src={photo?.url} key={photo?.id} title={photo?.title}/>}
+             {photo == null?<h3>Loading ... </h3>:<PhotoCard imgUrl={photo?.url} src={photo?.thumbnailUrl} key={photo?.id} title={photo?.title}/>}
           </>
           )}
         </div>

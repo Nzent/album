@@ -1,11 +1,21 @@
 import "../styles/photoCard.css"
-export default function PhotoCard({ src, alt, title }) {
+import {useState} from 'react'
+export default function PhotoCard({ src,imgUrl, alt, title }) {
+
+  const [isView,setIsView] = useState(false)
+
     return (
         <>
-          <div className="pc-body">
+        {/* Default card */}
+        <div className="pc-body" onClick={()=>setIsView(true)}>
             <img src={src} alt={alt} />
             <h4>{title}</h4>
-          </div>
+        </div>
+        {/* Modal */}
+        <div className={`${isView?"pc-modalbody-show":"pc-modalbody-hidden"}`}>
+          <img src={imgUrl} alt={title} />
+          <div onClick={()=>setIsView(false)} className="pc-close-btn">Close</div>
+        </div>
         </>
     )
 }
