@@ -1,7 +1,7 @@
 import React from 'react'
 import './AlbumCard.css'
-export default function AlbumCard() {
+export default function AlbumCard({title}) {
   return (
-    <div className='ac-body'>AlbumCard</div>
+    <div className='ac-body'>{title}</div>
   )
 }

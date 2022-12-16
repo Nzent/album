@@ -1,8 +1,25 @@
-.cardSection{
-  background-color: #efefef;
+.app{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
+  background-color: #f3f4f6;
+}
+
+.cardSection{
+  display: grid;
+  gap: 1rem;
+  grid-column: span 3;
+}
+
+.h-title{
+  text-align: center;
+}
+
+
+section {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
